@@ -63,7 +63,7 @@ def reversewordletters(txt):
         tmp_text += txt[j]
       tmp_text += txt[i]
       
-      back_pointer = i+1
+      back_pointer = i
       
   return tmp_text
   
