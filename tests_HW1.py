@@ -21,7 +21,7 @@ class TestHW1(unittest.TestCase):
 		self.assertEqual(HW1.shout("the rain, in spain"), "THE RAIN, IN SPAIN!")
 		
 	def test_shout5(self):
-		self.assertEqual(HW1.shout("99 bottles of beer!"), "99 BOTTLES OF BEER!")
+		self.assertEqual(HW1.shout("99 bottles of beer!"), "99 BOTTLES OF BEER!!")
 
 	#Reverse Correctness Tests
 	
@@ -43,33 +43,33 @@ class TestHW1(unittest.TestCase):
 	#Reversewords Correctness Tests
 	
 	def test_reversewords1(self):
-		self.assertEqual(HW1.reversewords("hello"), "hello")
+		self.assertEqual(HW1.reversewords("hello"), "hello. ")
 	
 	def test_reversewords2(self):
-		self.assertEqual(HW1.reversewords("the rain in spain"), "spain in rain the")
+		self.assertEqual(HW1.reversewords("the rain in spain"), "spain in rain the. ")
 		
 	def test_reversewords3(self):
-		self.assertEqual(HW1.reversewords("The Rain in Spain"), "Spain in Rain The")
+		self.assertEqual(HW1.reversewords("The Rain in Spain"), "Spain in Rain The. ")
 		
 	def test_reversewords4(self):
-		self.assertEqual(HW1.reversewords("the rain, in spain"), "spain in, rain the")
+		self.assertEqual(HW1.reversewords("the rain, in spain"), "spain in, rain the. ")
 	
 	def test_reversewords5(self):
-		self.assertEqual(HW1.reversewords("99 bottles of beer!"), "beer of bottles 99!")
+		self.assertEqual(HW1.reversewords("99 bottles of beer!"), "beer of bottles 99. ")
 	
 	#Reversewordletters Correctness Tests
 	
 	def test_reversewordletters1(self):
-		self.assertEqual(HW1.reversewordletters("hello"), "olleh")
+		self.assertEqual(HW1.reversewordletters("hello."), "olleh.")
 	
 	def test_reversewordletters2(self):
-		self.assertEqual(HW1.reversewordletters("the rain in spain"), "eht niar ni niaps")
+		self.assertEqual(HW1.reversewordletters("the rain in spain."), "eht niar ni niaps.")
 		
 	def test_reversewordletters3(self):
-		self.assertEqual(HW1.reversewordletters("The Rain in Spain"), "ehT niaR ni niapS")
+		self.assertEqual(HW1.reversewordletters("The Rain in Spain."), "ehT niaR ni niapS.")
 		
 	def test_reversewordletters4(self):
-		self.assertEqual(HW1.reversewordletters("the rain, in spain"), "eht niar, ni niaps")
+		self.assertEqual(HW1.reversewordletters("the rain, in spain."), "eht niar, ni niaps.")
 	
 	def test_reversewordletters5(self):
 		self.assertEqual(HW1.reversewordletters("99 bottles of beer!"), "99 selttob fo reeb!")
