@@ -53,6 +53,7 @@ class TestHW1(unittest.TestCase):
 		
 	def test_reversewords4(self):
 		self.assertEqual(HW1.reversewords("the rain, in spain"), "spain in, rain the. ")
+#test_reversewords4(self) fails because the code places the comma after rain instead of after in.
 	
 	def test_reversewords5(self):
 		self.assertEqual(HW1.reversewords("99 bottles of beer!"), "beer of bottles 99. ")
@@ -75,6 +76,7 @@ class TestHW1(unittest.TestCase):
 		self.assertEqual(HW1.reversewordletters("99 bottles of beer!"), "99 selttob fo reeb!")
 	
 	#Piglatin Correctness Tests
+	#These tests all fail because piglatin(txt) only returns pig latin if txt == "test" or txt == "pig latin"
 	
 	def test_piglatin1(self):
 		self.assertEqual(HW1.piglatin("hello"), "ellohay")
