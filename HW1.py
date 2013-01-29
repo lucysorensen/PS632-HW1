@@ -53,6 +53,7 @@ def reversewordletters(txt):
   back_pointer = 0
   front_pointer = 0
   stop_chars = [" ", ".", "?", "!", ",", ":", ";"]
+  
   for i in range(0, len(txt)):
     if txt[i] in stop_chars:
       front_pointer = i
@@ -63,7 +64,7 @@ def reversewordletters(txt):
         tmp_text += txt[j]
       tmp_text += txt[i]
       
-      back_pointer = i
+      back_pointer = i+1
       
   return tmp_text
   
